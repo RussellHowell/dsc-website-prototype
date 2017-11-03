@@ -1,0 +1,19 @@
+{
+  "name": "dsc-website-prototype",
+  "version": "0.0.1",
+  "description": "Website prototype for The Daylight Savings Company ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RussellHowell/dsc-website-prototype.git"
+  },
+  "author": "Russell A. Howell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RussellHowell/dsc-website-prototype/issues"
+  },
+  "homepage": "https://github.com/RussellHowell/dsc-website-prototype#readme"
+}
