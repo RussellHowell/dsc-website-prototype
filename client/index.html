@@ -21,14 +21,19 @@
 
 
         <!-- Hero Jumbotron Section   -->
-        <div class="uk-cover-container uk-inline">
-          <canvas width="1920" height="600"></canvas>
-          <video autoplay muted loop uk-cover>
-            <source src="img/skylapse.mp4" type="video/mp4">
+        <!-- <div class="uk-cover-container uk-height-large">
+            <video autoplay loop muted playsinline uk-cover>
+              <source src="img/skylapse.mp4" type="video/mp4">
+            </video>
+        </div> -->
+
+        <div class="uk-height-viewport uk-cover-container uk-light">
+          <video autoplay loop muted playsinline uk-cover class="uk-cover" style="height: 326px; width: 580px;" data-video="0">
+              <source src="img/skylapse.mp4" type="video/mp4">
           </video>
-          <div class="uk-overlay uk-light uk-position-center-left">
+          <div class="uk-position-center-left uk-flex uk-flex-column uk-width-1-1 uk-padding-small">
             <h1>Daylight Savings Company</h1>
-            <h3>Thinking up amazing taglines since 2017</h3>
+            <h3>25 years of award winning energy efficiency engineering</h3>
           </div>
         </div>
 
@@ -49,7 +54,9 @@
                                 </ul>
                             </div> -->
                         </li>
+                        <li><a href="#">Who's in the trenches</a></li>
                         <li><a href="#">Other Programs</a></li>
+
                     </ul>
 
                 </div>
@@ -58,13 +65,82 @@
       </div>
 
       <!-- NYS Compliance Information Section -->
-      <div class="uk-cover-container uk-container-expand uk-background-secondary uk-padding-large uk-inline">
-        <canvas width="1500"></canvas>
-        <img class="uk-padding-small" src="img/compliance_background.png" uk-cover></img>
-        <div class="uk-overlay uk-light">
-          <h2>NYS Compliance</h2>
+      <div class="uk-container uk-margin-bottom">
+        <h2 class="uk-margin-top">NYS Compliance Services</h2>
+        <h4>We can help your building stay compliant with New York State law.</h4>
+        <div uk-grid>
+          <div class="uk-child-width-1-3@l uk-grid-match" uk-grid="">
+            <div class="uk-first-column">
+              <div class="uk-card uk-card-default uk-card-hover" >
+                  <div class="uk-card-header">
+                      <h2>LL87</h2>
+                  </div>
+                  <div class="uk-card-body">
+                    <p>Local Law 87. We can help you avoid a $5,000 annual fine. It ensures energy efficiency and corrects issues that could lead to costly repairs or occupant complaints.</p>
+                  </div>
+                  <div class="uk-card-footer">
+                      <a href="#" class="uk-button uk-button-text">Find Out More</a>
+                  </div>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-default uk-card-hover">
+                  <div class="uk-card-header">
+                      <h2>LL84</h2>
+                  </div>
+                  <div class="uk-card-body">
+                    <p>The Local Law 84 process will help building owners understand how much energy the building uses in comparison to other similar buildings. Avoid a $500 quarterly fine ($2,000 annually).</p>
+                  </div>
+                  <div class="uk-card-footer">
+                      <a href="#" class="uk-button uk-button-text">Find Out More</a>
+                  </div>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card uk-card-default uk-card-hover">
+                  <div class="uk-card-header">
+                      <h2>Energy Services</h2>
+                  </div>
+                  <div class="uk-card-body">
+                    <p>Lower utility bills. Avoid costs due to occupant complaints. Our Energy Services team performs energy audits that are compliant with HUD regulations and Enterprise Green Communities certification criteria.</p>
+                  </div>
+                  <div class="uk-card-footer">
+                      <a href="#" class="uk-button uk-button-text">Find Out More</a>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
         </div>
       </div>
+      <div class=" uk-section-primary uk-section-large ">
+          <h2 class="uk-margin-left">NYS Funded Programs</h2>
+      </div>
+
+      <div class="uk-section uk-section-secondary uk-light">
+    <div class="uk-container">
+
+        <h3>Copyright 2017 - The Daylight Savings Co.</h3>
+
+        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+            <div>
+                <p>25 Main Street, Goshen NY, 10924</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div>
+              <p>
+                <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
+                <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="icon: facebook"></a>
+                <a href="" class="uk-icon-button" uk-icon="icon: google-plus"></a>
+              </p>
+            </div>
+        </div>
+
+    </div>
+</div>
 
 
 
