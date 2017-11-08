@@ -97,6 +97,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.nyserda-logo {
+  height: 75px;
+  margin-right: 15px;
+}
+
+.nyserda-card-header {
+  padding: 20px;
+    overflow: hidden;
+}
+
 
 
 
