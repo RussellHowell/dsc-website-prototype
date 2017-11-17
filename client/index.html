@@ -21,41 +21,48 @@
 
 
         <!-- Hero Jumbotron Section   -->
-        <div class="uk-height-viewport uk-cover-container uk-light">
+        <div class="uk-height-large uk-cover-container uk-light">
           <video autoplay loop muted playsinline uk-cover class="uk-cover" style="height: 326px; width: 580px;" data-video="0">
               <source src="img/skylapse.mp4" type="video/mp4">
           </video>
-          <div class="uk-position-center-left uk-flex uk-flex-column uk-width-1-1 uk-padding-small">
+          <div class="uk-position-top">
+                  <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                      <div class="uk-navbar-left">
+                          <ul class="uk-navbar-nav">
+                              <li class="uk-active"><a href="#">Active</a></li>
+                              <li><a href="#">Item</a></li>
+                              <li>
+                                  <a href="#">Parent</a>
+                                  <div class="uk-navbar-dropdown">
+                                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                                          <li class="uk-active"><a href="#">Active</a></li>
+                                          <li><a href="#">Item</a></li>
+                                          <li class="uk-nav-header">Header</li>
+                                          <li><a href="#">Item</a></li>
+                                          <li><a href="#">Item</a></li>
+                                          <li class="uk-nav-divider"></li>
+                                          <li><a href="#">Item</a></li>
+                                      </ul>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                  </nav>
+              </div>
+          <div class="uk-position-center-left uk-flex uk-flex-column uk-width-1-1 uk-padding-small uk-container">
+
             <h1>Daylight Savings Company</h1>
             <h3>25 years of award winning energy efficiency engineering</h3>
+            <div uk-grid class="uk-padding uk-margin-small-left">
+              <button class="uk-button uk-button-default uk-width-1-5@l uk-margin-small-right">LL87</button>
+              <button class="uk-button uk-button-default uk-width-1-5@l uk-margin-small-right">LL84</button>
+              <button class="uk-button uk-button-default uk-width-1-5@l uk-margin-small-right">Energy Evals</button>
+            </div>
           </div>
         </div>
-
-        <!-- Sticky Navbar -->
-        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-            <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
-                <div class="uk-navbar-left">
-
-                    <ul class="uk-navbar-nav">
-                        <li class="uk-active"><a href="#">NYS Compliance</a></li>
-                        <li>
-                            <a href="#">NYS Funded</a>
-                            <!-- <div class="uk-navbar-dropdown">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active"><a href="#">Active</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li><a href="#">Item</a></li>
-                                </ul>
-                            </div> -->
-                        </li>
-                        <li><a href="#">Other Programs</a></li>
-
-                    </ul>
-
-                </div>
-            </nav>
-        </div>
       </div>
+
+
 
       <!-- NYS Compliance Information Section -->
       <div class="uk-container uk-padding">
@@ -63,45 +70,48 @@
           <div class="uk-grid-match" uk-grid="">
             <div class="uk-first-column uk-width-1-3@l">
               <div class="uk-card uk-card-small uk-card-default uk-card-hover" >
-                  <div class="uk-card-header">
-                      <h2>LL87</h2>
-                  </div>
                   <div class="uk-card-body">
-                    <p>Local Law 87. We can help you avoid a $5,000 annual fine. It ensures energy efficiency and corrects issues that could lead to costly repairs or occupant complaints.</p>
-                  </div>
-                  <div class="uk-card-footer">
-                      <a href="#" class="uk-button uk-button-text">Find Out More</a>
-                  </div>
+                    <h2>Compliance Services</h2>
+                    <ul uk-accordion="collapsible: false">
+                        <li class="uk-open">
+                            <h3 class="uk-accordion-title">Local Law 87</h3>
+                            <div class="uk-accordion-content">
+                                <p>Local Law 87. We can help you avoid a $5,000 annual fine. It ensures energy efficiency and corrects issues that could lead to costly repairs or occupant complaints.</p>
+                                <a href="#" class="uk-button uk-button-text uk-float-right">Find Out More</a>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="uk-accordion-title">Local Law 84</h3>
+                            <div class="uk-accordion-content">
+                                <p>The Local Law 84 process will help building owners understand how much energy the building uses in comparison to other similar buildings. Avoid a $500 quarterly fine ($2,000 annually). </p>
+                                <a href="#" class="uk-button uk-button-text uk-float-right">Find Out More</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
               </div>
             </div>
             <div class="uk-width-1-3@l">
               <div class="uk-card uk-card-small uk-card-default uk-card-hover">
-                  <div class="uk-card-header">
-                      <h2>LL84</h2>
-                  </div>
                   <div class="uk-card-body">
-                    <p>The Local Law 84 process will help building owners understand how much energy the building uses in comparison to other similar buildings. Avoid a $500 quarterly fine ($2,000 annually).</p>
-                  </div>
-                  <div class="uk-card-footer">
-                      <a href="#" class="uk-button uk-button-text">Find Out More</a>
-                  </div>
-              </div>
-            </div>
-            <div class="uk-width-1-3@l">
-              <div class="uk-card uk-card-small uk-card-default uk-card-hover">
-                  <div class="uk-card-header">
-                      <h2>Energy Evaluations</h2>
-                  </div>
-                  <div class="uk-card-body">
+                    <h2 >Energy Evaluations</h2>
                     <p>Lower utility bills. Avoid costs due to occupant complaints. Our Energy Services team performs energy audits that are compliant with HUD regulations and Enterprise Green Communities certification criteria.</p>
-                  </div>
-                  <div class="uk-card-footer">
-                      <a href="#" class="uk-button uk-button-text">Find Out More</a>
+                    <a href="#" class="uk-button uk-button-text">Find Out More</a>
                   </div>
               </div>
             </div>
-            <div class="uk-width-1-1@l">
-              <div class="uk-card-small uk-card-default uk-card-body">
+            <div class="uk-width-1-3@l">
+              <div class="uk-card uk-card-small uk-card-default">
+                  <div class="uk-card-body">
+                      <h2>Access to NYS Funding</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                  </div>
+                  <div class="uk-card-media-top">
+                      <img src="img/nyserda-logo.jpg" alt="">
+                  </div>
+              </div>
+            </div>
+              <!-- <div class="uk-card-small uk-card-default uk-card-body">
                 <div class="uk-grid-small uk-flex-middle" uk-grid>
                     <div class="uk-width-1-6@l">
                       <img class="uk-border-rounded" width="inherit" height="inherit" src="img/nyserda-logo.jpg">
@@ -113,7 +123,7 @@
                         <p>Lorem ipsum color sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -121,6 +131,7 @@
         </div>
       </div>
 
+      <!-- Footer -->
       <div class="uk-section uk-section-secondary uk-light">
     <div class="uk-container">
 
