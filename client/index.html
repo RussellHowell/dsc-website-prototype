@@ -20,13 +20,14 @@
         <![endif]-->
 
         <!-- Hero Jumbotron Section   -->
-        <div class="uk-height-large uk-cover-container uk-light">
-          <video autoplay loop muted playsinline uk-cover class="uk-cover" style="height: 326px; width: 580px;" data-video="0">
-              <source src="img/skylapse.mp4" type="video/mp4">
+        <div class=" uk-cover-container uk-light">
+          <canvas width="auto" height="600"></canvas>
+          <video autoplay loop muted playsinline uk-cover class="uk-cover-background" style="height: 326px; width: 580px;" data-video="0">
+              <source src="img/cover_vid.mp4" type="video/mp4">
           </video>
           <div class="uk-position-center-left uk-flex uk-flex-column uk-width-2-4@l uk-width-1-2@l uk-margin-small uk-container">
             <div class="uk-cover-container">
-              <img src="img/daylight_header.png" class=""/>
+              <img src="img/daylight_header.PNG" class=""/>
             </div>
 
               <!-- <button class="uk-button uk-button-default uk-width-1-5@l uk-width-1-2@s uk-margin-small-right">LL87</button>
@@ -133,9 +134,14 @@
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
+        window.ga = function() {
+  ga.q.push(arguments);
+};
+ga.q = [];
+ga.l = +new Date();
+ga("create", "UA-XXXXX-Y", "auto");
+ga("send", "pageview");
+</script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
     </body>
 </html>
